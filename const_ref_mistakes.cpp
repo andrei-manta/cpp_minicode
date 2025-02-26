@@ -15,5 +15,13 @@ int main()
         //nonconst ref to temporary variable (r1 * 2 still temporary here, even without the literal initialiser) through a const ref - ILLEGAL
         //int &r5 = r3 * 3;
 
+        double a = 3.14;
+        //FINE, but ref_a represents a converted to int, hence ref_a = 3, probably a temporary
+        const int &ref_a = a;
+
+        double b = 6.28;
+        //ILLEGAL, b would get converted to 6, 6 be held in a temporary, nonconst reference to temporary is illegal
+        int &ref_b = b;
+
         return 0;
 }
