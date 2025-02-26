@@ -1,6 +1,6 @@
 int main()
 {
-        int i = 7;
+        int i = 6;
 
         //const ref to nonconst object - FINE, can't use the ref to change the object
         const int &r1 = i;
