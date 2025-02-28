@@ -21,7 +21,7 @@ constexpr int &r1 = a;
 constexpr const int &r3 = a;
 constexpr const int &r4 = b;
 
-//constexpr pointers can also be initialised with nullptr and 0
+//constexpr pointers can also be initialised with 0 and nullptr
 constexpr int *p5 = 0;
 constexpr int *p6 = nullptr;
 
