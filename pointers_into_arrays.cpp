@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iterator>
 
 using std::vector, std::string, std::cout, std::endl;
 
@@ -16,6 +17,10 @@ int main() {
     //use pointers as iterators with pointer arithmetic
     for (; b != e; ++b)
         cout << *b << endl;
+
+    //ALTERNATIVE
+    int *b2 = std::begin(arr);
+    int *e2 = std::end(arr);
 
     return 0;
 }
