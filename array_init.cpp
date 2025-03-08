@@ -11,9 +11,9 @@ string sa[3];
 
 int main() {
 
-    //initialised with 3 zeroes
+    //LEGAL, but initialised with 3 UNDEFINED VALUES
     int ib[3];
-    //initialised with 3 ""
+    //LEGAL, but initialised with 3 UNDEFINED VALUES
     string sb[3];
 
     cout << "ia---" << endl;
